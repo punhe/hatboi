@@ -87,12 +87,6 @@ a:focus {
   color: initial;
 }
 
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 
 /*header section*/
 .hero_area {
@@ -1072,10 +1066,22 @@ body {
 }
 .show-more-btn {
   cursor: pointer;
-  color: blue;
-  text-decoration: underline;
+  color: rgb(255, 255, 255);
 }
 
 .hidden-content {
   display: none;
+}
+
+.hidden-content.show {
+  display: block;
+}
+
+.show-more-btn {
+  margin-bottom: 30px;
+  background-color:#ffbe33;
+}
+
+.show-more-btn:hover {
+  background-color:#ffbe33; /* Giữ nguyên màu nền khi hover */ /* Giữ nguyên màu văn bản khi hover */
 }
